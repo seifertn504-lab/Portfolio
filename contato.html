@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <section class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="img/l-nick (1).png" alt="Nicole Seifert">
+            </a>
+            <nav class="navbar" aria-label="Navegação principal">
+                <a href="index.html">Home</a>
+                <a href="sobre.html">Sobre Mim</a>
+                <a href="habilidades.html">Habilidades</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="experiencia.html">Experiência</a>
+                <a href="contato.html" class="active">Contato</a>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h2 class="title">Entre em <span>Contato</span></h2>
+            <form id="contact-form" novalidate>
+                <fieldset>
+                    <legend>Informações de Contato</legend>
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="nome" required>
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <small id="email-error" class="field-error" aria-live="polite"></small>
+                    <br>
+                    <label for="comentarios">Comentários</label>
+                    <br>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Digite seus Comentários aqui"></textarea>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+    <script src="contato.js"></script>
+</body>
+</html>

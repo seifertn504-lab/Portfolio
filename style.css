@@ -99,6 +99,14 @@ section[id],
     color: var(--white);
 }
 
+.navbar a.active {
+    color: var(--white);
+}
+
+.navbar a.active::after {
+    width: 100%;
+}
+
 /* Item do menu correspondente à âncora na URL (HTML + CSS, sem JavaScript) */
 body:not(:has(*:target)) .navbar a[href="#home"],
 body:has(#home:target) .navbar a[href="#home"] {
@@ -118,11 +126,27 @@ body:has(#about:target) .navbar a[href="#about"]::after {
     width: 100%;
 }
 
+body:has(#skills:target) .navbar a[href="#skills"] {
+    color: var(--white);
+}
+
+body:has(#skills:target) .navbar a[href="#skills"]::after {
+    width: 100%;
+}
+
 body:has(#projects:target) .navbar a[href="#projects"] {
     color: var(--white);
 }
 
 body:has(#projects:target) .navbar a[href="#projects"]::after {
+    width: 100%;
+}
+
+body:has(#experience:target) .navbar a[href="#experience"] {
+    color: var(--white);
+}
+
+body:has(#experience:target) .navbar a[href="#experience"]::after {
     width: 100%;
 }
 
@@ -253,6 +277,38 @@ body:has(#contact:target) .navbar a[href="#contact"]::after {
     max-width: 70rem;
 }
 
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    gap: 2rem;
+}
+
+.skill-card,
+.timeline-item {
+    background-color: var(--black);
+    border: var(--border);
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.skill-card h3,
+.timeline-item h3 {
+    color: var(--orange);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.skill-card p,
+.timeline-item p {
+    font-size: 1.6rem;
+    line-height: 1.7;
+}
+
+.timeline {
+    display: grid;
+    gap: 1.8rem;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -337,6 +393,14 @@ label {
     display: block;
     margin: 1.2rem 0 0.6rem;
 
+}
+
+.field-error {
+    display: block;
+    min-height: 1.8rem;
+    margin-top: 0.6rem;
+    color: #ff8f8f;
+    font-size: 1.4rem;
 }
 
 textarea {
