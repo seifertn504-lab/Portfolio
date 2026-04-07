@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <section class="header-inner">
+            <a href="#home" class="logo">
+                <img src="img/l-nick (1).png" alt="Nicole Seifert">
+            </a>
+            <nav class="navbar" aria-label="Navegação principal">
+                <a href="#home">Home</a>
+                <a href="#about">Sobre Mim</a>
+                <a href="#projects">Projetos</a>
+                <a href="#contact">Contato</a>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <div class="home-container" id="home">
+            <section class="home-section">
+                <div class="content">
+                    <h3>Meu Portfólio</h3>
+                    <p>Transformando ideias em experiências digitais únicas, aplicando conhecimentos em Ciência da Computação com foco em inovação, funcionalidade e design.</p>
+                    <a href="#about" class="btn">Sobre Mim</a>
+                </div>
+            </section>
+        </div>
+
+        <section class="about" id="about">
+            <h2 class="title">Sobre <span>Mim</span></h2>
+            <div class="row">
+                <div class="container-image">
+                    <img src="img/WhatsApp Image 2026-03-23 at 14.55.31.jpeg" alt="Nicole Seifert">
+                </div>
+                <div class="content">
+                    <h3>Nicole Seifert</h3>
+                    <p>Sou estudante de Ciência da Computação, apaixonada por tecnologia e aprendizado contínuo. Tenho experiência como aprendiz na área de suporte técnico, onde desenvolvi habilidades em resolução de problemas, atendimento ao usuário e manutenção de sistemas. Tenho 20 anos e estou em busca de oportunidades para crescer profissionalmente na área de tecnologia. No meu tempo livre, gosto de jogar futevôlei, o que reforça meu trabalho em equipe e disciplina.</p>
+                    <p>Estou em constante aprendizado, desenvolvendo projetos que fortalecem minhas habilidades em programação e ampliam minha visão sobre o mundo da tecnologia. Meu objetivo é crescer profissionalmente na área, contribuindo com soluções inovadoras e eficientes.</p>
+                    <a href="#projects" class="btn">Ver projetos</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2 class="title">Meus <span>Projetos</span></h2>
+            <p class="section-lead">Alguns dos trabalhos e experimentos que demonstram minha evolução em desenvolvimento e design.</p>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-card-body">
+                        <h3>Nick Cookies</h3>
+                       <img src="img/Captura de tela 2026-03-29 105620.png">
+                        <p>Desenvolvi um site de cookies com proposta de e-commerce, focado na apresentação de produtos e na experiência do usuário. O projeto foi construído utilizando HTML, CSS e JavaScript, permitindo uma interface mais dinâmica e interativa. Trabalhei na organização dos elementos, estilização e implementação de funcionalidades para melhorar a navegação e usabilidade. Esse projeto reforça minhas habilidades em desenvolvimento front-end e criação de interfaces responsivas.</p>
+                   <a href="https://cafeteriadanick.netlify.app/" class="btn" target="_blank">Ver projeto</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-card-body">
+                        <h3>Lógica e estruturas de dados</h3>
+                        <p>Exercícios e pequenos sistemas que reforçam raciocínio algorítmico e boas práticas de código.</p>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-card-body">
+                        <h3>Portfólio Pessoal</h3>
+                        <p>Criei um site responsivo para apresentar meus projetos, habilidades e informações profissionais. O layout foi desenvolvido com foco em usabilidade e experiência do usuário, adaptando-se a diferentes dispositivos.
+
+<br><b><em>Tecnologias:</b> HTML, CSS, JavaScript.</p></br>
+                    </div>
+                </article>
+            </div>
+            
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="title">Entre em <span>Contato</span></h2>
+            <form>
+                <fieldset>
+                    <legend>Informações de Contato</legend>
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="nome">
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email">
+                    <br>
+                    <label for="comentarios">Comentários</label>
+                    <br>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Digite seus Comentários aqui"></textarea>
+                    <br>
+                    <button onclick="alert('ENTRAREMOS EM CONTATO')">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
